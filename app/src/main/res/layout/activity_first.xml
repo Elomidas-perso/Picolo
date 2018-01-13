@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_back"
+    tools:context="elomidas.picolympe.FirstActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+            <LinearLayout
+                android:id="@+id/display"
+                style="?metaButtonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:gravity="top"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/fullscreen_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:keepScreenOn="true"
+                    android:text="@string/name"
+                    android:textColor="@color/color_main"
+                    android:textSize="42sp"
+                    android:fontFamily="Arial"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

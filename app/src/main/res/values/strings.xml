@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Picolympe</string>
+
+    <string name="name">\nPicolympe :\n\nLa Cuite des Dieux\n</string>
+    <string name="next">Suivant</string>
+
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

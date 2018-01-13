@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_back"
+    tools:context="elomidas.picolympe.SecondActivity">
+
+
+    <FrameLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/layout_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="top">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/liste"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <!--
+                            Emplacement des champs de nom des joueurs
+                            -->
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            style="?metaButtonBarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:gravity="bottom"
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
+
+                            <!-- Détruire la dernière zone de texte -->
+                            <Button
+                                android:id="@+id/button_del"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="Arial"
+                                android:text="Supprimer"
+                                android:textColor="@color/color_buttonOn"
+                                android:textSize="20sp" />
+
+                            <!-- Ajouter une zone de texte à la fin -->
+                            <Button
+                                android:id="@+id/button_add"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="Arial"
+                                android:text="Ajouter"
+                                android:textColor="@color/color_buttonOn"
+                                android:textSize="20sp" />
+
+                            <!-- Valider et passer au jeu -->
+                            <Button
+                                android:id="@+id/button_next"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="Arial"
+                                android:text="Valider"
+                                android:textColor="@color/color_buttonOn"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+<!--
+        <LinearLayout
+            android:id="@+id/controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="bottom"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/button_next"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="Arial"
+                android:text="Valider"
+                android:textColor="@color/color_button"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        -->
+
+    </FrameLayout>
+
+</FrameLayout>
